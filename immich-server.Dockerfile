@@ -1,9 +1,9 @@
 FROM ghcr.io/immich-app/immich-server:release
 
-RUN useradd sys-immich
+RUN useradd unifi-drive-nfs
 RUN groupadd unifi-drive
 
-USER sys-immich
+USER unifi-drive-nfs
 
 # From https://github.com/immich-app/immich/blob/main/server/Dockerfile
 VOLUME /usr/src/app/upload
